@@ -1,8 +1,7 @@
-import { GoogleGenAI, Chat, Type, Schema } from "@google/genai";
+import { GoogleGenAI, Chat, Type } from "@google/genai";
 import { Flashcard, QuizQuestion } from "../types";
 
-const apiKey = process.env.API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const SYSTEM_INSTRUCTION = `You are an elite Exercise Physiologist and Hypertrophy Specialist. 
 Your goal is to help users understand the science of muscle growth. 
@@ -51,7 +50,8 @@ export const generateFlashcards = async (): Promise<Flashcard[]> => {
             properties: {
               term: { type: Type.STRING },
               definition: { type: Type.STRING }
-            }
+            },
+            propertyOrdering: ["term", "definition"]
           }
         }
       }
@@ -87,10 +87,12 @@ export const generateQuizQuestion = async (): Promise<QuizQuestion | null> => {
                   text: { type: Type.STRING },
                   isCorrect: { type: Type.BOOLEAN },
                   feedback: { type: Type.STRING, description: "A 40-50 word explanation of why this option is right or wrong, using UK English." }
-                }
+                },
+                propertyOrdering: ["text", "isCorrect", "feedback"]
               }
             }
-          }
+          },
+          propertyOrdering: ["question", "options"]
         }
       }
     });
