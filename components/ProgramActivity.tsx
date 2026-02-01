@@ -13,7 +13,7 @@ export const ProgramActivity: React.FC<ProgramActivityProps> = ({
   instructions = "This template guides you through designing a hypertrophy-focused mesocycle. You can fill it out directly below, or open it in a new window to save your changes to your DocHub account."
 }) => {
   // Using the standard shared document URL which typically renders better on desktop/embeds
-  const docUrl = "https://dochub.com/shared-document/betterfit/EB5r38AwlmxNA2dRXzZ1kD/hypertrophy-pd-template-pdf?dt=85G2R2eJLafmPmrNAK2C";
+  const docUrl = "https://dochub.com/m/shared-document/betterfit/EB5r38AwlmxNA2dRXzZ1kD/hypertrophy-pd-template-pdf?dt=85G2R2eJLafmPmrNAK2C";
 
   return (
     <div className="flex flex-col h-full bg-slate-50 dark:bg-[#0f172a] transition-colors duration-300">

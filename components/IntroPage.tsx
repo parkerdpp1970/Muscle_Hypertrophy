@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Presentation, ArrowRight, ExternalLink, BrainCircuit, Layers, GraduationCap, RefreshCw, Copy, Check, MonitorPlay, BookOpen, X, Lightbulb, Play, FileText, Sparkles, Timer, Activity, ClipboardList } from 'lucide-react';
+import { Search, Presentation, ArrowRight, ExternalLink, Layers, GraduationCap, RefreshCw, Copy, Check, MonitorPlay, BookOpen, X, Lightbulb, Play, FileText, Sparkles, Timer, Activity, ClipboardList } from 'lucide-react';
 import { generateResearchPrompt } from '../services/gemini';
 
 interface IntroPageProps {
