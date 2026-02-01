@@ -484,7 +484,7 @@ export const TempoActivity: React.FC<TempoActivityProps> = ({ onBack }) => {
                 <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm">
                    <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Concentric Velocity is King</h2>
                    <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                     Recent reviews (Wilk et al., 2021) confirm that for 1RM strength development, the <strong className="text-indigo-600 dark:text-indigo-400">Concentric Velocity</strong> is paramount. While the bar may move slowly due to heavy loads (>85%), the <em>intent</em> must be explosive.
+                     Recent reviews (Wilk et al., 2021) confirm that for 1RM strength development, the <strong className="text-indigo-600 dark:text-indigo-400">Concentric Velocity</strong> is paramount. While the bar may move slowly due to heavy loads (&gt;85%), the <em>intent</em> must be explosive.
                    </p>
                    <div className="grid md:grid-cols-2 gap-8 mt-8">
                       <div className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl">
@@ -504,7 +504,7 @@ export const TempoActivity: React.FC<TempoActivityProps> = ({ onBack }) => {
                         </div>
                         <div className="flex gap-4 p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm">
                            <AlertCircle className="text-amber-500 flex-shrink-0" />
-                           <p className="text-sm text-slate-700 dark:text-slate-300"><strong>Avoid Super Slow:</strong> >6s eccentrics significantly limit the load you can handle.</p>
+                           <p className="text-sm text-slate-700 dark:text-slate-300"><strong>Avoid Super Slow:</strong> &gt;6s eccentrics significantly limit the load you can handle.</p>
                         </div>
                       </div>
                    </div>
@@ -555,7 +555,7 @@ export const TempoActivity: React.FC<TempoActivityProps> = ({ onBack }) => {
                           <h4 className="font-bold text-lg text-slate-900 dark:text-white mb-2">Wilk et al. (2021) - Sports (MDPI)</h4>
                           <p className="text-slate-600 dark:text-slate-300 italic mb-2">"The Influence of Movement Tempo..."</p>
                           <p className="text-sm text-slate-600 dark:text-slate-400">
-                             Found that a wide range of tempos (2s to 8s per repetition) are effective for hypertrophy. However, for strength, fast concentric actions are superior. Extremely slow training ({'>'}10s) produces inferior results due to significantly reduced load.
+                             Found that a wide range of tempos (2s to 8s per repetition) are effective for hypertrophy. However, for strength, fast concentric actions are superior. Extremely slow training (&gt;10s) produces inferior results due to significantly reduced load.
                           </p>
                        </div>
                        <div className="p-6 bg-slate-50 dark:bg-slate-900/50 rounded-xl border-l-4 border-emerald-500">
